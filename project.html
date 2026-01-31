@@ -4,162 +4,174 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="theme-color" content="#0b0f14"/>
+
   <title>Project Gallery | Twinline Exteriors</title>
   <meta name="description" content="Project photo gallery from Twinline Exteriors. Commercial and residential exterior cladding in Calgary."/>
-  <link rel="canonical" href="/project.html"/>
+
+  <link rel="canonical" href="project.html"/>
+
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Project Gallery | Twinline Exteriors"/>
   <meta property="og:description" content="Project photo gallery from Twinline Exteriors. Commercial and residential exterior cladding in Calgary."/>
-  <meta property="og:image" content="/img/brand/logo.png"/>
+  <meta property="og:image" content="img/brand/logo.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
+
   <link rel="stylesheet" href="style.css"/>
-
 </head>
+
 <body>
-<div class="topbar">
-  <div class="header">
-    <a class="top-btn top-btn-left" href="#" id="toTopBtn" aria-label="Back to top" title="Back to top">↑</a>
+  <div class="topbar">
+    <div class="header">
+      <a class="top-btn top-btn-left" href="#" id="toTopBtn" aria-label="Back to top" title="Back to top">↑</a>
 
-    <a class="brand" href="/index.html" aria-label="Home">
-      <div class="brand-logo"><img src="img/brand/logo.png" alt="Twinline Exteriors logo"></div>
-      <div class="brand-text">
-        <div class="name" data-company></div>
-        <small data-tagline></small>
-      </div>
-    </a>
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="brand-logo"><img src="img/brand/logo.png" alt="Twinline Exteriors logo"></div>
+        <div class="brand-text">
+          <div class="name" data-company></div>
+          <small data-tagline></small>
+        </div>
+      </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" title="Menu">
-      <img src="img/brand/logo.png" alt="">
-    </button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu" title="Menu">
+        <img src="img/brand/logo.png" alt="">
+      </button>
 
-    <nav class="nav-inline" id="navInline" aria-label="Main navigation">
-      <a class="active" href="/projects.html">Projects</a>
-      <a class="" href="/services.html">Services</a>
-      <a class="" href="/materials.html">Materials</a>
-      <a class="" href="/about.html">About</a>
-      <a class="" href="/contact.html">Contact</a>
-      <a class="" href="/free-estimate.html">Free Estimate</a>
-    </nav>
+      <nav class="nav-inline" id="navInline" aria-label="Main navigation">
+        <a class="active" href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="materials.html">Materials</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="free-estimate.html">Free Estimate</a>
+      </nav>
+    </div>
   </div>
-</div>
 
-<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
-  <div class="menu-panel">
-    <div class="menu-top">
-      <div class="menu-brand">
-        <img src="img/brand/logo.png" alt="Twinline Exteriors logo">
-        <div>
-          <div class="menu-name" data-company></div>
-          <div class="menu-tag" data-tagline></div>
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-panel">
+      <div class="menu-top">
+        <div class="menu-brand">
+          <img src="img/brand/logo.png" alt="Twinline Exteriors logo">
+          <div>
+            <div class="menu-name" data-company></div>
+            <div class="menu-tag" data-tagline></div>
+          </div>
+        </div>
+        <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
+      </div>
+
+      <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="materials.html">Materials</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="free-estimate.html">Free Estimate</a>
+      </div>
+
+      <div class="menu-contact">
+        <div class="menu-line"><b>Service area:</b> <span data-service-area></span></div>
+        <div class="menu-line"><b>Email:</b> <a data-email href="#"></a></div>
+        <div class="menu-line"><b>Phone:</b> <a data-phone href="#"></a></div>
+        <div class="menu-line"><b>Address:</b> <a data-address href="#"></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="breadcrumb"><a href="projects.html">Projects</a> / <span id="crumb"></span></div>
+
+    <section class="section">
+      <h1 class="page-title" id="title"></h1>
+      <p class="page-sub" id="sub"></p>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="year"></span> <span data-company></span></div>
+      <div><a href="contact.html">Contact</a> • <span data-service-area></span></div>
+    </div>
+  </div>
+
+  <div id="lightbox" aria-hidden="true">
+    <div class="wrap">
+      <img id="lbImg" src="" alt=""/>
+      <div class="bar">
+        <div id="lbCaption"></div>
+        <div class="controls">
+          <button class="iconbtn" id="prevBtn" aria-label="Previous image">←</button>
+          <button class="iconbtn" id="nextBtn" aria-label="Next image">→</button>
+          <button class="iconbtn" id="closeBtn" aria-label="Close">Close</button>
         </div>
       </div>
-      <button class="menu-close" id="menuClose" aria-label="Close menu">✕</button>
-    </div>
-
-    <div class="menu-links">
-      <a href="/index.html">Home</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/services.html">Services</a>
-      <a href="/materials.html">Materials</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/free-estimate.html">Free Estimate</a>
-    </div>
-
-    <div class="menu-contact">
-      <div class="menu-line"><b>Service area:</b> <span data-service-area></span></div>
-      <div class="menu-line"><b>Email:</b> <a data-email href="#"></a></div>
-      <div class="menu-line"><b>Phone:</b> <a data-phone href="#"></a></div>
-      <div class="menu-line"><b>Address:</b> <a data-address href="#"></a></div>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="breadcrumb"><a href="/projects.html">Projects</a> / <span id="crumb"></span></div>
-  <section class="section">
-    <h1 class="page-title" id="title"></h1>
-    <p class="page-sub" id="sub"></p>
-    <div id="gallery" class="gallery"></div>
-  </section>
-  <div class="footer"><div>© <span id="year"></span> <span data-company></span></div><div><a href="/contact.html">Contact</a> • <span data-service-area></span></div></div>
-</div>
 
-<div id="lightbox" aria-hidden="true">
-  <div class="wrap">
-    <img id="lbImg" src="" alt=""/>
-    <div class="bar">
-      <div id="lbCaption"></div>
-      <div class="controls">
-        <button class="iconbtn" id="prevBtn" aria-label="Previous image">←</button>
-        <button class="iconbtn" id="nextBtn" aria-label="Next image">→</button>
-        <button class="iconbtn" id="closeBtn" aria-label="Close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+  <script src="config.js"></script>
+  <script src="projects.js"></script>
+  <script src="shared.js"></script>
 
+  <script>
+    const qs = new URLSearchParams(location.search);
+    const id = qs.get("id");
+    const project = (typeof PROJECTS !== "undefined" && PROJECTS.length)
+      ? (PROJECTS.find(function(p){ return p.id === id; }) || PROJECTS[0])
+      : null;
 
-<script src="config.js"></script>
-<script src="projects.js"></script>
-<script src="shared.js"></script>
+    if (!project) { location.href = "projects.html"; }
 
-<script>
-  const qs = new URLSearchParams(location.search);
-  const id = qs.get("id");
-  const project = (typeof PROJECTS !== "undefined" && PROJECTS.length)
-    ? (PROJECTS.find(function(p){ return p.id === id; }) || PROJECTS[0])
-    : null;
+    document.title = project.title + " | Twinline Exteriors";
+    document.getElementById("crumb").textContent = project.title;
+    document.getElementById("title").textContent = project.title;
+    document.getElementById("sub").textContent = project.location || "";
 
-  if(!project){ location.href = "/projects.html"; }
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = project.photos.map(function(src, i){
+      return '<div class="tile" data-i="' + i + '">'
+        + '<img loading="lazy" src="' + src + '" alt="' + project.title + ' photo ' + (i+1) + '">'
+        + '</div>';
+    }).join("");
 
-  document.title = project.title + " | Twinline Exteriors";
-  document.getElementById("crumb").textContent = project.title;
-  document.getElementById("title").textContent = project.title;
-  document.getElementById("sub").textContent = project.location || "";
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lbImg");
+    const lbCaption = document.getElementById("lbCaption");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const closeBtn = document.getElementById("closeBtn");
+    let current = 0;
 
-  const gallery = document.getElementById("gallery");
-  gallery.innerHTML = project.photos.map(function(src, i){
-    return '<div class="tile" data-i="' + i + '"><img loading="lazy" src="/' + src + '" alt="' + project.title + ' photo ' + (i+1) + '"></div>';
-  }).join("");
+    function openAt(index){
+      current = index;
+      lbImg.src = project.photos[current];
+      lbCaption.textContent = project.title + " - " + (current+1) + " / " + project.photos.length;
+      lb.classList.add("show");
+      lb.setAttribute("aria-hidden","false");
+    }
+    function closeLB(){
+      lb.classList.remove("show");
+      lb.setAttribute("aria-hidden","true");
+    }
+    function next(){ openAt((current+1) % project.photos.length); }
+    function prev(){ openAt((current-1 + project.photos.length) % project.photos.length); }
 
-  const lb = document.getElementById("lightbox");
-  const lbImg = document.getElementById("lbImg");
-  const lbCaption = document.getElementById("lbCaption");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
-  const closeBtn = document.getElementById("closeBtn");
-  let current = 0;
+    gallery.addEventListener("click", function(e){
+      const tile = e.target.closest(".tile");
+      if(!tile) return;
+      openAt(Number(tile.dataset.i));
+    });
 
-  function openAt(index){
-    current = index;
-    lbImg.src = "/" + project.photos[current];
-    lbCaption.textContent = project.title + " - " + (current+1) + " / " + project.photos.length;
-    lb.classList.add("show");
-    lb.setAttribute("aria-hidden","false");
-  }
-  function closeLB(){ lb.classList.remove("show"); lb.setAttribute("aria-hidden","true"); }
-  function next(){ openAt((current+1) % project.photos.length); }
-  function prev(){ openAt((current-1 + project.photos.length) % project.photos.length); }
+    lb.addEventListener("click", function(e){ if(e.target === lb) closeLB(); });
+    closeBtn.onclick = closeLB;
+    nextBtn.onclick = next;
+    prevBtn.onclick = prev;
 
-  gallery.addEventListener("click", function(e){
-    const tile = e.target.closest(".tile");
-    if(!tile) return;
-    openAt(Number(tile.dataset.i));
-  });
-
-  lb.addEventListener("click", function(e){ if(e.target === lb) closeLB(); });
-  closeBtn.onclick = closeLB;
-  nextBtn.onclick = next;
-  prevBtn.onclick = prev;
-
-  window.addEventListener("keydown", function(e){
-    if(!lb.classList.contains("show")) return;
-    if(e.key === "Escape") closeLB();
-    if(e.key === "ArrowRight") next();
-    if(e.key === "ArrowLeft") prev();
-  });
-</script>
-
-
+    window.addEventListener("keydown", function(e){
+      if(!lb.classList.contains("show")) return;
+      if(e.key === "Escape") closeLB();
+      if(e.key === "ArrowRight") next();
+      if(e.key === "ArrowLeft") prev();
+    });
+  </script>
 </body>
 </html>
