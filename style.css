@@ -108,3 +108,16 @@ html{scroll-behavior:smooth;scroll-padding-top:110px}body{background:var(--bg);c
 @media(max-width:1000px){.menu-btn{display:flex}.nav-inline{display:none!important}.home-hero{gap:30px}.hero-photo{height:460px}.service-grid{grid-template-columns:repeat(2,1fr)}.service-groups>a{padding:24px}.service-groups h3{font-size:23px}}
 @media(max-width:700px){.container{padding:0 20px}.header{padding:17px 20px}.brand-text .name{font-size:27px}.brand-text small{font-size:7px}.home-hero{grid-template-columns:1fr;padding-top:36px;gap:30px}.hero-copy h1{font-size:53px}.hero-copy p{font-size:16px}.hero-photo{height:380px}.hero-note{margin-top:24px}.service-strip{font-size:9px;letter-spacing:.5px;gap:12px}.section{margin:50px 0}.section-heading{display:block}.section-heading p,.section-heading>.text-link{margin-top:20px;display:block}.service-groups,.service-grid{grid-template-columns:1fr}.service-groups span{margin-bottom:22px}.service-groups h3{font-size:28px}.grid{grid-template-columns:1fr}.process{padding:28px}.process .grid{gap:30px}.cta-panel{padding:30px;display:block;margin:45px 0}.cta-panel .btn{margin-top:25px}.footer{grid-template-columns:1fr 1fr;gap:25px}.footer>div:first-child{grid-column:1/-1}.footer>div:last-child{overflow-wrap:anywhere}.page-intro{padding-top:40px}.page-intro p{font-size:16px}.filter-heading{display:block}.category-filters{gap:6px}.category-filters button{font-size:11px;padding:10px 11px}.columns{grid-template-columns:1fr;gap:30px}.form .row{grid-template-columns:1fr}.group-links{gap:6px}.group-links a{padding:10px;font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Estimate form */
+.estimate-form label{display:grid;gap:8px;font-size:14px;font-weight:650;min-width:0}
+.estimate-form .input{font-weight:400;min-width:0}
+.photo-upload{padding:22px;background:#e9ede2;border:1px dashed #9eafa1;border-radius:4px;min-width:0}
+.photo-upload p{margin:10px 0;overflow-wrap:anywhere}
+.photo-upload input{max-width:100%;font-size:14px}
+.form-status{margin:0;line-height:1.6;border-radius:4px}
+.form-status:empty{display:none}
+.form-status:not(:empty){padding:16px;border:1px solid #b8c7bc}
+.form-status[data-state=error]{background:#fff1ea;color:#78381c;border-color:#c88261}
+.form-status[data-state=success]{background:#e9ede2}
+.estimate-form button:disabled{opacity:.65;cursor:wait}
