@@ -5,7 +5,7 @@ const SITE_CONFIG = {
   companyName: "TwinLine",
   tagline: "Exteriors • Interiors • Home Repairs",
 
-  email: "Twinlineexteriorscorp@gmail.com",
+  email: "info@twinlinepro.com",
   phoneDisplay: "+1 (587) 968-8247",
   phoneTel: "+15879688247",
 
