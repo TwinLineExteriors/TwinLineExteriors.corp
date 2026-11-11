@@ -5,6 +5,7 @@
 const PROJECTS = [
   {
     id: "seton-townhomes",
+    categories: ["siding"],
     title: "Seton Townhomes",
     location: "Calgary, AB",
     cover: "img/seton-townhomes/01.jpg",
@@ -51,6 +52,7 @@ const PROJECTS = [
   },
   {
     id: "commercial-plaza",
+    categories: ["siding"],
     title: "Commercial Plaza (Metal Cladding, Hardie® & Lux Siding)",
     location: "Calgary, AB",
     cover: "img/commercial-plaza/01.jpg",
@@ -73,6 +75,7 @@ const PROJECTS = [
   },
   {
     id: "single-family",
+    categories: ["siding"],
     title: "Residential Homes (Single-Family & Multi-Family)",
     location: "Calgary, AB",
     cover: "img/single-family/01.jpg",
@@ -103,7 +106,9 @@ const PROJECTS = [
   },
   {
   id: "parkdale",
-  title: "Parkdale (hardie panels with Z-bar and easy tream system)",
+  published: false, // Original gallery has no image files in the repository.
+    categories: ["siding"],
+  title: "Parkdale — Hardie Panels & EasyTrim",
   cover: "img/parkdale/01.jpg",
   photos: [
     "img/parkdale/01.jpg",
@@ -113,7 +118,8 @@ const PROJECTS = [
 },
 {
   id: "bow-33",
-  title: "Bow 33 (hardie panel, hardie plank and lux soffit)",
+    categories: ["siding", "soffit-gutters"],
+  title: "Bow 33 — Hardie Siding & Lux Soffit",
   cover: "img/bow-33/01.jpg",
   photos: [
     "img/bow-33/01.jpg",
@@ -141,7 +147,8 @@ const PROJECTS = [
 },
 {
   id: "carrington",
-  title: "Carrington (fuul hardie)",
+    categories: ["siding"],
+  title: "Carrington — Hardie Exterior",
   cover: "img/carrington/01.jpg",
   photos: [
     "img/carrington/01.jpg",
@@ -190,7 +197,8 @@ const PROJECTS = [
 },
 {
   id: "adelaide",
-  title: "Adelaide (board&button, hardie panels with Z-bar and easy tream)",
+    categories: ["siding"],
+  title: "Adelaide — Board-and-Batten & Hardie Panels",
   cover: "img/adelaide/01.jpg",
   photos: [
     "img/adelaide/01.jpg",

@@ -1,9 +1,9 @@
 // Global site config (used on every page).
 // After you buy your domain, set siteUrl (no trailing slash), e.g. "https://twinlineexteriors.ca"
 const SITE_CONFIG = {
-  siteUrl: "",
-  companyName: "TWINLINE EXTERIORS CORPORATION",
-  tagline: "Commercial & Residential • Fast • Precise • On Schedule",
+  siteUrl: "https://twinlinepro.com",
+  companyName: "TwinLine",
+  tagline: "Exteriors • Interiors • Home Repairs",
 
   email: "Twinlineexteriorscorp@gmail.com",
   phoneDisplay: "+1 (587) 968-8247",
