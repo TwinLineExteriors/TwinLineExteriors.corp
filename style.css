@@ -121,3 +121,5 @@ html{scroll-behavior:smooth;scroll-padding-top:110px}body{background:var(--bg);c
 .form-status[data-state=error]{background:#fff1ea;color:#78381c;border-color:#c88261}
 .form-status[data-state=success]{background:#e9ede2}
 .estimate-form button:disabled{opacity:.65;cursor:wait}
+
+.project-stage{margin:40px 0 55px}.project-stage h2{font-size:28px;margin-bottom:22px}#sub{max-width:850px}

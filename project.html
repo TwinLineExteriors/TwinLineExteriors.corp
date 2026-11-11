@@ -16,7 +16,7 @@
   <meta property="og:image" content="https://twinlinepro.com/img/single-family/01.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
 
-  <link rel="stylesheet" href="style.css?v=2"/>
+  <link rel="stylesheet" href="style.css?v=4"/>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
   </div>
 
   <script src="config.js?v=3"></script>
-  <script src="projects.js?v=2"></script>
+  <script src="projects.js?v=3"></script>
   <script src="shared.js?v=2"></script>
 
   <script>
@@ -65,14 +65,29 @@
     document.title = project.title + " | TwinLine";
     document.getElementById("crumb").textContent = project.title;
     document.getElementById("title").textContent = project.title;
-    document.getElementById("sub").textContent = project.location || "";
+    document.getElementById("sub").textContent = [project.location, project.description].filter(Boolean).join(" — ");
 
     const gallery = document.getElementById("gallery");
-    gallery.innerHTML = project.photos.map(function(src, i){
-      return '<button type="button" class="tile" data-i="' + i + '">'
-        + '<img loading="lazy" src="' + src + '" alt="' + project.title + ' photo ' + (i+1) + '">'
-        + '</button>';
-    }).join("");
+    function photoTile(src, i, stage) {
+      const tile = document.createElement('button');
+      tile.type = 'button'; tile.className = 'tile'; tile.dataset.i = i;
+      const image = document.createElement('img');
+      image.loading = 'lazy'; image.src = src;
+      image.alt = project.title + ' — ' + (stage || 'project photo') + ' ' + (i + 1);
+      tile.append(image);
+      return tile;
+    }
+    if (project.photoGroups) {
+      gallery.classList.remove('gallery');
+      let index = 0;
+      for (const group of project.photoGroups) {
+        const section = document.createElement('section'); section.className = 'project-stage';
+        const heading = document.createElement('h2'); heading.textContent = group.title;
+        const photos = document.createElement('div'); photos.className = 'gallery';
+        for (const src of group.photos) photos.append(photoTile(src, index++, group.title));
+        section.append(heading, photos); gallery.append(section);
+      }
+    } else project.photos.forEach((src, i) => gallery.append(photoTile(src, i)));
 
     const lb = document.getElementById("lightbox");
     const lbImg = document.getElementById("lbImg");
@@ -85,7 +100,7 @@
     function openAt(index){
       current = index;
       lbImg.src = project.photos[current];
-      lbCaption.textContent = project.title + " - " + (current+1) + " / " + project.photos.length;
+      lbCaption.textContent = (project.photoGroups?.find(group => group.photos.includes(project.photos[current]))?.title || project.title) + " - " + (current+1) + " / " + project.photos.length;
       lb.classList.add("show");
       lb.setAttribute("aria-hidden","false");
     }

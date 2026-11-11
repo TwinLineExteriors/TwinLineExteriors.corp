@@ -3,6 +3,72 @@
 // Tip: if images don't refresh online, rename files (01_v2.jpg) to beat browser cache.
 
 const PROJECTS = [
+{
+  "id": "vinyl-hail-renovation",
+  "categories": [
+    "siding"
+  ],
+  "title": "Vinyl Siding Renovation After Hail Damage",
+  "description": "Replacement of hail-damaged vinyl siding with new white vinyl siding. Follow the project from the original damage through removal and installation to the finished exterior.",
+  "cover": "img/vinyl-hail-renovation/after-01.webp",
+  "photos": [
+    "img/vinyl-hail-renovation/before-01.webp",
+    "img/vinyl-hail-renovation/before-02.webp",
+    "img/vinyl-hail-renovation/before-03.webp",
+    "img/vinyl-hail-renovation/during-01.webp",
+    "img/vinyl-hail-renovation/during-02.webp",
+    "img/vinyl-hail-renovation/during-03.webp",
+    "img/vinyl-hail-renovation/during-04.webp",
+    "img/vinyl-hail-renovation/after-01.webp",
+    "img/vinyl-hail-renovation/after-02.webp",
+    "img/vinyl-hail-renovation/after-03.webp",
+    "img/vinyl-hail-renovation/after-04.webp",
+    "img/vinyl-hail-renovation/after-05.webp",
+    "img/vinyl-hail-renovation/after-06.webp",
+    "img/vinyl-hail-renovation/after-07.webp",
+    "img/vinyl-hail-renovation/after-08.webp",
+    "img/vinyl-hail-renovation/after-09.webp",
+    "img/vinyl-hail-renovation/after-10.webp",
+    "img/vinyl-hail-renovation/after-11.webp",
+    "img/vinyl-hail-renovation/after-12.webp"
+  ],
+  "photoGroups": [
+    {
+      "title": "Before renovation",
+      "photos": [
+        "img/vinyl-hail-renovation/before-01.webp",
+        "img/vinyl-hail-renovation/before-02.webp",
+        "img/vinyl-hail-renovation/before-03.webp"
+      ]
+    },
+    {
+      "title": "During renovation",
+      "photos": [
+        "img/vinyl-hail-renovation/during-01.webp",
+        "img/vinyl-hail-renovation/during-02.webp",
+        "img/vinyl-hail-renovation/during-03.webp",
+        "img/vinyl-hail-renovation/during-04.webp"
+      ]
+    },
+    {
+      "title": "After renovation",
+      "photos": [
+        "img/vinyl-hail-renovation/after-01.webp",
+        "img/vinyl-hail-renovation/after-02.webp",
+        "img/vinyl-hail-renovation/after-03.webp",
+        "img/vinyl-hail-renovation/after-04.webp",
+        "img/vinyl-hail-renovation/after-05.webp",
+        "img/vinyl-hail-renovation/after-06.webp",
+        "img/vinyl-hail-renovation/after-07.webp",
+        "img/vinyl-hail-renovation/after-08.webp",
+        "img/vinyl-hail-renovation/after-09.webp",
+        "img/vinyl-hail-renovation/after-10.webp",
+        "img/vinyl-hail-renovation/after-11.webp",
+        "img/vinyl-hail-renovation/after-12.webp"
+      ]
+    }
+  ]
+},
   {
     id: "seton-townhomes",
     categories: ["siding"],
