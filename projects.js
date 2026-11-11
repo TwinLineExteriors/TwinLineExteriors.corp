@@ -4,6 +4,49 @@
 
 const PROJECTS = [
 {
+  "id": "fenyk-coffee-stone",
+  "categories": [
+    "stucco-stone"
+  ],
+  "title": "Fenyk Coffee & Social \u2014 Stonework",
+  "location": "114 Rangeview Gate SE, Calgary, AB T3S 1B4",
+  "scopeLabel": "INTERIOR & EXTERIOR",
+  "description": "Stone veneer installation on the exterior feature wall and interior fireplace wall at Fenyk Coffee & Social. Project photos show preparation, installation and the resulting stone finishes.",
+  "cover": "img/fenyk-coffee-stone/img_3345.webp",
+  "photos": [
+    "img/fenyk-coffee-stone/img_3080.webp",
+    "img/fenyk-coffee-stone/img_3081.webp",
+    "img/fenyk-coffee-stone/img_3121.webp",
+    "img/fenyk-coffee-stone/img_3077.webp",
+    "img/fenyk-coffee-stone/img_3266.webp",
+    "img/fenyk-coffee-stone/img_3118.webp",
+    "img/fenyk-coffee-stone/img_3344.webp",
+    "img/fenyk-coffee-stone/img_3345.webp",
+    "img/fenyk-coffee-stone/img_3346.webp"
+  ],
+  "photoGroups": [
+    {
+      "title": "Preparation & installation",
+      "photos": [
+        "img/fenyk-coffee-stone/img_3080.webp",
+        "img/fenyk-coffee-stone/img_3081.webp",
+        "img/fenyk-coffee-stone/img_3121.webp",
+        "img/fenyk-coffee-stone/img_3077.webp",
+        "img/fenyk-coffee-stone/img_3266.webp",
+        "img/fenyk-coffee-stone/img_3118.webp"
+      ]
+    },
+    {
+      "title": "Stonework results",
+      "photos": [
+        "img/fenyk-coffee-stone/img_3344.webp",
+        "img/fenyk-coffee-stone/img_3345.webp",
+        "img/fenyk-coffee-stone/img_3346.webp"
+      ]
+    }
+  ]
+},
+{
   "id": "vinyl-hail-renovation",
   "categories": [
     "siding"

@@ -3,7 +3,7 @@ function projectCard(p) {
   const thumb = document.createElement('div'); thumb.className = 'thumb';
   const img = document.createElement('img'); img.src = p.cover; img.alt = p.title + ' — TwinLine project'; img.loading = 'lazy'; thumb.append(img);
   const meta = document.createElement('div'); meta.className = 'meta';
-  const label = document.createElement('p'); label.className = 'sub'; label.textContent = 'EXTERIOR / ' + (p.location || 'PROJECT GALLERY');
+  const label = document.createElement('p'); label.className = 'sub'; label.textContent = (p.scopeLabel || 'EXTERIOR') + ' / ' + (p.location || 'PROJECT GALLERY');
   const title = document.createElement('h3'); title.className = 'title'; title.textContent = p.title;
   const link = document.createElement('span'); link.className = 'card-link'; link.textContent = 'View project →'; meta.append(label,title,link); a.append(thumb,meta); return a;
 }
