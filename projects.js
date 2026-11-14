@@ -4,6 +4,32 @@
 
 const PROJECTS = [
 {
+  "id": "deveraux-heritage-versetta",
+  "categories": [
+    "stucco-stone"
+  ],
+  "title": "Deveraux near Heritage Station \u2014 Versetta Stone",
+  "location": "Near Heritage Station, Calgary, AB",
+  "scopeLabel": "NEW PROJECT \u00b7 IN PROGRESS",
+  "description": "Work has started on a new Deveraux project near Heritage Station in Calgary. Our scope includes Versetta Stone installation, exterior insulation and metal J-channel trim around windows. These photos show the preparation and early installation stages; the project is ongoing.",
+  "cover": "img/deveraux-heritage-versetta/progress-01.webp",
+  "photos": [
+    "img/deveraux-heritage-versetta/progress-01.webp",
+    "img/deveraux-heritage-versetta/progress-02.webp",
+    "img/deveraux-heritage-versetta/progress-03.webp"
+  ],
+  "photoGroups": [
+    {
+      "title": "Project start & installation progress \u2014 November 2026",
+      "photos": [
+        "img/deveraux-heritage-versetta/progress-01.webp",
+        "img/deveraux-heritage-versetta/progress-02.webp",
+        "img/deveraux-heritage-versetta/progress-03.webp"
+      ]
+    }
+  ]
+},
+{
   "id": "fenyk-coffee-stone",
   "categories": [
     "stucco-stone"
